@@ -1,5 +1,5 @@
 {
-  "name": "bot_exam",
+  "name": "bot",
   "version": "1.0.0",
   "description": "",
   "main": "bot.js",
@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "node test/",
-    "build": "echo bot_exam",
-    "deploy": "now alias --token $NOW_TOKEN $(now --token $NOW_TOKEN --name \"bot_exam\") \"bot_exam\""
+    "build": "echo bot",
+    "deploy": "now alias --token $NOW_TOKEN $(now --token $NOW_TOKEN --name \"bot\") \"bot\""
   },
   "repository": {
     "type": "git",
