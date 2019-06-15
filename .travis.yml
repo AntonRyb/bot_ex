@@ -4,4 +4,4 @@ node_js:
 before_install:
     - "npm install"
 script: 
-  - node bot.js
+  - npm run build
