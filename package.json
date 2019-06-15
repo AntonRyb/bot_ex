@@ -7,6 +7,10 @@
     "node-telegram-bot-api": "^0.30.0",
     "request": "^2.88.0"
   },
+  "scripts": {
+    "test": "node test/",
+    "build": "echo bot_exam"    
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AntonRyb/bot.git"
