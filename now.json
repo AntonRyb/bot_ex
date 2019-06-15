@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "routes": [{ "src": "*.js", "dest": "https://lab1-project.antonryb99.now.sh" }],
+  "routes": [{ "src": "*.js", "dest": "bot.js" }],
   "name": "bot"
 }
