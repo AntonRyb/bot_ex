@@ -1,5 +1,5 @@
 {
   "version": 2,
   "routes": [{ "src": "*.js", "dest": "bot.js" }],
-  "name": "bot"
+  "name": "bot_ex"
 }
