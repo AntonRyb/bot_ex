@@ -5,6 +5,6 @@ before_install:
   - npm install
 script: 
   - npm run build
-deploy:
+after_script:
   - npm run deploy
 
