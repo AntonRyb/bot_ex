@@ -10,7 +10,7 @@
   "scripts": {
     "test": "node test/",
     "build": "echo bot_ex",
-    "deploy": "now alias --token $NOW_TOKEN $(now --token $NOW_TOKEN --name \"bot_ex-$TRAVIS_BRANCH\") \"bot_ex-$TRAVIS_BRANCH\""
+    "deploy": "now alias --target $NOW_TOKEN $(now --target $NOW_TOKEN --name \"bot_ex-$TRAVIS_BRANCH\") \"bot_ex-$TRAVIS_BRANCH\""
   },
   "repository": {
     "type": "git",
