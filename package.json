@@ -9,17 +9,17 @@
   },
   "scripts": {
     "test": "node test/",
-    "build": "echo bot",
-    "deploy": "now alias --token $NOW_TOKEN $(now --token $NOW_TOKEN --name \"bot\") \"bot\""
+    "build": "echo bot_ex",
+    "deploy": "now alias --token $NOW_TOKEN $(now --token $NOW_TOKEN --name \"bot_ex-$TRAVIS_BRANCH\") \"bot_ex-$TRAVIS_BRANCH\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntonRyb/bot.git"
+    "url": "git+https://github.com/AntonRyb/bot_ex.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AntonRyb/bot/issues"
+    "url": "https://github.com/AntonRyb/bot_ex/issues"
   },
-  "homepage": "https://github.com/AntonRyb/bot#readme"
+  "homepage": "https://github.com/AntonRyb/bot_ex#readme"
 }
