@@ -84,6 +84,7 @@ module.exports = (req, res) => {
         if (body) {
             bot.processUpdate(JSON.parse(body));
             res.writeHead(200, {'Content-Type': 'text/html'});
+            
             res.end(body);            
         }
       else {
