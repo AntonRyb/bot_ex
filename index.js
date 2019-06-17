@@ -1,4 +1,4 @@
-const TelegramBot = require('node-telegram-bot-api');
+/*const TelegramBot = require('node-telegram-bot-api');
 
 const bot = new TelegramBot('886860863:AAHal1EeuIuDrdy6k6Pl7SRyj3DWkwibDBQ');
 
@@ -31,7 +31,8 @@ module.exports = (req, res) => {
       }
     });
 };
-/*const TelegramBot = require('node-telegram-bot-api');
+*/
+const TelegramBot = require('node-telegram-bot-api');
 const request = require('request');
 
 
@@ -74,10 +75,23 @@ bot.on('callback_query', query => {
   })
 })
 
-
 module.exports = (req, res) => {
-  res.end('The time is: ' + new Date())
-}
-*/
+    let body = '';
+    req.on('data', (chunk) => {
+        body += chunk;
+    });
+    req.on('end', () => {
+        if (body) {
+            bot.processUpdate(JSON.parse(body));
+            res.writeHead(200, {'Content-Type': 'text/html'});
+            res.end(body);            
+        }
+      else {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.end('OK');
+      }
+    });
+};
+
 
 
