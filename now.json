@@ -1,5 +1,4 @@
 {
   "version": 2,
-  "name": "bot_ex",
-  "builds": [{ "src": "index.js", "use": "@now/node" }]
+  "name": "bot_ex"
 }
