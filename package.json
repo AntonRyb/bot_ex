@@ -8,9 +8,9 @@
     "request": "^2.88.0"
   },
   "scripts": {
-    "test": "node test/",
+    "test": "",
     "build": "echo bot_ex",
-    "deploy": "now alias --token $NOW_TOKEN $(now --tokent $NOW_TOKEN --name \"bot_ex-$TRAVIS_BRANCH\") \"bot_ex-$TRAVIS_BRANCH\""
+    "deploy": "now alias --token $NOW_TOKEN $(now --token $NOW_TOKEN --name \"bot_ex\") \"bot_ex\""
   },
   "repository": {
     "type": "git",
