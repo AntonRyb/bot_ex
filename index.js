@@ -70,8 +70,13 @@ module.exports = (req, res) => {
     });
     req.on('end', () => {
         if (body) {
+            res.writeHead(200, {'Content-Type': 'text/html'});
+            res.end(body);
             bot.processUpdate(JSON.parse(body));
         }
+      else {
+        res.writeHead(200, {'Content-Type': 'text/html'});
         res.end('OK');
+      }
     });
 };
