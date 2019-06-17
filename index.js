@@ -39,7 +39,7 @@ const request = require('request');
 const token = '608783806:AAEIm9YHSELLgbNGz8Q6Ib4cmmwS48ly4Tk';
 
 // Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(token, {polling: true});
+const bot = new TelegramBot(token);
 
 
 let button = {
