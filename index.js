@@ -1,4 +1,4 @@
-const TelegramBot = require('node-telegram-bot-api');
+/*const TelegramBot = require('node-telegram-bot-api');
 const request = require('request');
 
 
@@ -40,3 +40,8 @@ bot.on('callback_query', query => {
      bot.sendMessage(id, answer);
   })
 })
+  */
+
+module.exports = (req, res) => {
+  res.end('The time is: ' + new Date())
+}
