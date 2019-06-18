@@ -21,10 +21,9 @@ module.exports = (req, res) => {
     });
     req.on('end', () => {
         if (body) {
-          bot.on('message', msg => {
-            const { chat : { id } } = msg;
+          
             bot.sendMessage(id, 'Hello');
-          });
+         
             //bot.processUpdate(JSON.parse(body));
             res.writeHead(200, {'Content-Type': 'text/html'});
             res.end(body);            
