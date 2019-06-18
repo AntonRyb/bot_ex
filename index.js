@@ -1,4 +1,4 @@
-/*const TelegramBot = require('node-telegram-bot-api');
+const TelegramBot = require('node-telegram-bot-api');
 
 const bot = new TelegramBot('886860863:AAHal1EeuIuDrdy6k6Pl7SRyj3DWkwibDBQ');
 
@@ -31,6 +31,8 @@ module.exports = (req, res) => {
       }
     });
 };
+
+/*
 //------------------------------------------------------//
 const TelegramBot = require('node-telegram-bot-api');
 const request = require('request');
